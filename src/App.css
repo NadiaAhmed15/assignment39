@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; 
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+
+.user-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px; 
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+.user-list-container h2 {
+  font-size: 28px; 
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px; 
+  border-bottom: 1px solid #eaeaea;
+  font-size: 18px; 
+}
+
+.user-item:last-child {
+  border-bottom: none;
+}
+
+
+.editing-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.user-input {
+  padding: 8px 12px; 
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 60%;
+}
+
+
+.edit-btn,
+.save-btn {
+  padding: 8px 15px;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px; 
+  transition: background-color 0.3s ease;
+  margin-left: 10px; 
+}
+
+.edit-btn:hover {
+  background-color: #0056b3; 
+}
+
+.save-btn:hover {
+  background-color: #0056b3; 
+}
+
+
+@media (max-width: 768px) {
+  .user-list-container {
+    width: 90%; 
+  }
+
+  .user-input {
+    width: 100%;
+  }
+}
